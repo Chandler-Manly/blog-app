@@ -3,9 +3,7 @@ const cors = require('cors')
 const bodyParser = require('body-parser');
 const logger = require('morgan');
 
-
 const postsRoutes = require('./routes/posts-routes');
-
 
 const db = require('./db/connection')
 const PORT = process.env.PORT || 3000
