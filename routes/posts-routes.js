@@ -5,8 +5,8 @@ const router = Router()
 
 router.get('/posts', controllers.getPosts)
 router.get('/posts/:id', controllers.getPost)
-// router.post('/products', controllers.createProduct)
-// router.put('/products/:id', controllers.updateProduct)
+router.post('/posts', controllers.createPost)
+router.put('/posts/:id', controllers.updatePost)
 // router.delete('/products/:id', controllers.deleteProduct)
 
 module.exports = router
