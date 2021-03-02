@@ -26,47 +26,30 @@ const getPost = async (req, res) => {
   }
 }
 
+const createPost = async (req, res) => {
+  try {
+      const post = await new Post(req.body)
+      await post.save()
+      res.status(201).json(post)
+  } catch (error) {
+      console.log(error)
+      res.status(500).json({ error: error.message })
+  }
+}
 
-// app.get("/posts/:id", async (req, res) => {
-//   try {
-//     const { id } = req.params;
-//     const post = await Post.findById(id);
-//     res.json(post);
-//   } catch (error) {
-//     console.log(error);
-//     res.status(500).json({ error: error.message });
-//   }
-// });
+const updatePost = async (req, res) => {
+  const { id } = req.params
+  await Post.findByIdAndUpdate(id, req.body, { new: true }, (error, post) => {
+      if (error) {
+          return res.status(500).json({ error: error.message })
+      }
+      if (!post) {
+          return res.status(404).json({ message: 'Post not found!' })
+      }
+      res.status(200).json(post)
+  })
+}
 
-// app.post("/posts", async (req, res) => {
-//   try {
-//     const post = new Post(req.body);
-//     await post.save();
-//     res.status(201).json(post);
-//   } catch (error) {
-//     console.log(error);
-//     res.status(500).json({ error: error.message });
-//   }
-// });
-
-// app.put("/posts/:id", async (req, res) => {
-//   const { id } = req.params;
-
-//   await Post.findByIdAndUpdate(
-//     id,
-//     req.body,
-//     { new: true },
-//     (error, post) => {
-//       if (error) {
-//         return res.status(500).json({ error: error.message });
-//       }
-//       if (!post) {
-//         return res.status(404).json(post);
-//       }
-//       res.status(200).json(post);
-//     }
-//   );
-// });
 
 // app.delete("/posts/:id", async (req, res) => {
 //   try {
@@ -81,4 +64,4 @@ const getPost = async (req, res) => {
 //   }
 // });
 
-module.exports = {getPosts, getPost}
+module.exports = {getPosts, getPost, createPost, updatePost}
