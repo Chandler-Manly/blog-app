@@ -13,17 +13,19 @@ const getPosts = async (req, res) => {
   }
 }
 
+const getPost = async (req, res) => {
+  try {
+      const { id } = req.params
+      const post = await Post.findById(id)
+      if (post) {
+          return res.json(post)
+      }
+      res.status(404).json({ message: 'Post not found!' })
+  } catch (error) {
+      res.status(500).json({ error: error.message })
+  }
+}
 
-
-// app.get("/posts", async (req, res) => {
-//   try {
-//     const posts = await Post.find();
-//     res.json(posts);
-//   } catch (error) {
-//     console.log(error);
-//     res.status(500).json({ error: error.message });
-//   }
-// });
 
 // app.get("/posts/:id", async (req, res) => {
 //   try {
@@ -79,4 +81,4 @@ const getPosts = async (req, res) => {
 //   }
 // });
 
-module.exports = {getPosts}
+module.exports = {getPosts, getPost}
