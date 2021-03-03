@@ -1,5 +1,5 @@
-import './App.css';
-import '/src/components/shared/Layout/Layout';
+import "./App.css";
+import "/src/components/shared/Layout/Layout";
 
 function App() {
   return (
