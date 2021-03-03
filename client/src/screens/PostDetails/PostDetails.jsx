@@ -28,7 +28,7 @@ const PostDetails = (props) => {
         <div className="post-details">
           <div className="title">{post.title}</div>
           <div className="author">{post.author}</div>
-          <div className="image">{post.imgURL}</div>
+          <img className="image" src={post.imgURL} alt={post.title}/>
           <div className="content">{post.content}</div>
           <button className="edit-button">
             <Link className="edit-link" to={`/posts/${post._id}/edit`}>
