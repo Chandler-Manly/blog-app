@@ -10,6 +10,7 @@ const Search = (props) => {
                 name="Search"
                 placeholder="Search"
                 type="text"
+          
                 autoFocus
             />
         </form>
