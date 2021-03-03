@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./Postcard.css";
+// import "./Postcard.css";
 
 const PostCard = (props) => {
   return (
