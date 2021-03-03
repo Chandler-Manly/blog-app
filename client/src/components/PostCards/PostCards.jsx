@@ -1,3 +1,4 @@
+import { Component } from "react";
 import PostCard from "../PostCard/PostCard";
 import { getPosts } from "../../services/posts";
 import "./PostCards.css";

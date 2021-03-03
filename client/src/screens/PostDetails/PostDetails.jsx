@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./PostDetails.css";
+// import "./PostDetails.css";
 import Layout from "../../components/shared/Layout/Layout";
 import { getPost, deletePost } from "../../services/posts";
 import { useParams, Link } from "react-router-dom";
