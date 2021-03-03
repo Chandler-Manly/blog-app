@@ -5,12 +5,17 @@ const Nav = () => {
   return (
     <nav>
       <div className="nav">
-        <NavLink className="link" to="/">
-          BlogApp
+        <NavLink className="logo" to="/">
+          PostsApp
         </NavLink>
-        <NavLink className="link" to="/add-post">
-          Add Post
-        </NavLink>
+        <div className="links">
+          <NavLink className="link" to="/posts">
+            View All Posts
+          </NavLink>
+          <NavLink className="link" to="/add-post">
+            Add Your Own
+          </NavLink>
+        </div>
       </div>
     </nav>
   );
