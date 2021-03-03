@@ -23,6 +23,7 @@ class PostCards extends Component {
           <PostCard
             _id={post._id}
             name={post.title}
+            author={post.author}
             imgURL={post.imgURL}
             key={index}
           />
@@ -31,7 +32,6 @@ class PostCards extends Component {
 
     return (
       <div className="post-cards">
-        <div className="latest">LATEST</div>
         <div className="cards">{CARDS}</div>
       </div>
     );
