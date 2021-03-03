@@ -1,5 +1,7 @@
-import "./ProductCreate.css";
+import "./PostCreate.css";
 import Layout from "../../components/shared/Layout/Layout";
+import { useState } from 'react'
+import { Redirect } from 'react-router-dom'
 import { createPost } from "../../services/posts";
 
 const PostCreate = (props) => {
