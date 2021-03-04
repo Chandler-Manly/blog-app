@@ -22,6 +22,7 @@ const PostDetails = (props) => {
   if (!isLoaded) {
     return <h1>Still writing...</h1>;
   }
+  
 
   const handleDelete = async () => {
     await deletePost(post._id);
