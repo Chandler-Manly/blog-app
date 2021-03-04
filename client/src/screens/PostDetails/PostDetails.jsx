@@ -28,7 +28,7 @@ const PostDetails = (props) => {
         <div className="post-details">
           <div className="title">{post.title}</div>
           <div className="author">{post.author}</div>
-          <img className="image" src={post.imgURL} alt={post.title}/>
+          <img className="image" src={post.imgURL} alt={post.title} />
           <div className="content">{post.content}</div>
           <button className="edit-button">
             <Link className="edit-link" to={`/posts/${post._id}/edit`}>
@@ -39,7 +39,9 @@ const PostDetails = (props) => {
             className="delete-button"
             onClick={() => deletePost(post._id)}
           >
-            Delete
+            <Link className="edit-link" to={`/posts`}>
+              Delete
+            </Link>
           </button>
         </div>
       </Layout>
