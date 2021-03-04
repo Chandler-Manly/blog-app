@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 // import "./PostDetails.css";
 import Layout from "../../components/shared/Layout/Layout";
 import { getPost, deletePost } from "../../services/posts";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, Redirect } from "react-router-dom";
+
 
 const PostDetails = (props) => {
   const [post, setPost] = useState(null);
@@ -21,6 +22,7 @@ const PostDetails = (props) => {
   if (!isLoaded) {
     return <h1>Still writing...</h1>;
   }
+  
 
   return (
     <div>
@@ -39,7 +41,7 @@ const PostDetails = (props) => {
             className="delete-button"
             onClick={() => deletePost(post._id)}
           >
-            <Link className="edit-link" to={`/posts`}>
+            <Link className="delete-link" to={`/posts`}>
               Delete
             </Link>
           </button>

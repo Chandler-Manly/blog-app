@@ -1,0 +1,18 @@
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.link-all {
+  text-decoration: none;
+}
+
+.link-add {
+  text-decoration: none;
+}
