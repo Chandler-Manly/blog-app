@@ -51,7 +51,6 @@ const Posts = (props) => {
       title={post.title}
       author={post.author}
       imgURL={post.imgURL}
-      content={post.content}
       key={index}
     />
   ));
