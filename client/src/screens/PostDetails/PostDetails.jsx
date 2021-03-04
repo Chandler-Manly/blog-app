@@ -2,11 +2,12 @@ import { useState, useEffect } from "react";
 // import "./PostDetails.css";
 import Layout from "../../components/shared/Layout/Layout";
 import { getPost, deletePost } from "../../services/posts";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useHistory } from "react-router-dom";
 
 const PostDetails = (props) => {
   const [post, setPost] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
+  const history = useHistory();
   const { id } = useParams();
 
   useEffect(() => {
@@ -22,6 +23,11 @@ const PostDetails = (props) => {
     return <h1>Still writing...</h1>;
   }
 
+  const handleDelete = async () => {
+    await deletePost(post._id);
+    history.push("/posts");
+  };
+
   return (
     <div>
       <Layout>
@@ -35,13 +41,8 @@ const PostDetails = (props) => {
               Edit
             </Link>
           </button>
-          <button
-            className="delete-button"
-            onClick={() => deletePost(post._id)}
-          >
-            <Link className="edit-link" to={`/posts`}>
-              Delete
-            </Link>
+          <button className="delete-button" onClick={handleDelete}>
+            Delete
           </button>
         </div>
       </Layout>
