@@ -38,7 +38,7 @@ const Posts = (props) => {
 
   const handleSearch = (event) => {
     const newQueriedPosts = allPosts.filter((post) =>
-      post.author.toLowerCase().includes(event.target.value.toLowerCase())
+      post.title.toLowerCase().includes(event.target.value.toLowerCase())
     );
     setQueriedPosts(newQueriedPosts);
   };
