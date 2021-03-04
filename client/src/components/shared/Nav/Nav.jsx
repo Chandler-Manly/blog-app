@@ -9,10 +9,10 @@ const Nav = () => {
           PostsApp
         </NavLink>
         <div className="links">
-          <NavLink className="link-all" to="/posts">
+          <NavLink className="links" to="/posts">
             View All Posts
           </NavLink>
-          <NavLink className="link-add" to="/add-post">
+          <NavLink className="links" to="/add-post">
             Add Your Own
           </NavLink>
         </div>
