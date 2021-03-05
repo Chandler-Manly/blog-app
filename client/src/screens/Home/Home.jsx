@@ -1,6 +1,6 @@
 import PostCards from "../../components/PostCards/PostCards";
 import Layout from "../../components/shared/Layout/Layout";
-// import "./Home.css";
+import "./Home.css";
 
 const Home = () => {
   return (

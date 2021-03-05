@@ -17,7 +17,6 @@
   transition: 0.3s;
 }
 
-
 .card:hover {
   transform: scale(1.02);
   opacity: 0.9;
@@ -45,7 +44,7 @@
 }
 
 .left-card-container {
-  display:flex;
+  display: flex;
   flex-direction: column;
   padding: 40px;
   justify-content: space-between;
@@ -55,5 +54,35 @@
 .view-statement {
   text-align: center;
   font-weight: bold;
+}
 
+@media (max-width: 375px) {
+  .post-card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+  }
+
+  .post-card-image {
+    height: 200px;
+  }
+
+  .card {
+    grid-template-columns: none;
+    grid-row: none;
+    grid-row-gap: 0px;
+  }
+  .post-title-home {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .post-author {
+    text-align: center;
+  }
+
+  .view-statement {
+    margin-top: 30px;
+    font-size: 15px;
+  }
 }

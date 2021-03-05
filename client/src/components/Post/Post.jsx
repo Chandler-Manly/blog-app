@@ -12,9 +12,12 @@ const Post = (props) => {
             <div className="all-views-post-author">{props.author}</div>
           </div>
           <div className="all-views-view-statement">View Post</div>
-          </div>
-          <img className="all-views-post-img" src={props.imgURL} alt={props.title} />
-        
+        </div>
+        <img
+          className="all-views-post-img"
+          src={props.imgURL}
+          alt={props.title}
+        />
       </Link>
     </div>
   );

@@ -7,7 +7,6 @@ const PostCard = (props) => {
       <Link className="card" to={`/posts/${props._id}`}>
         <div className="left-card-container">
           <div className="top-half">
-
             <div className="post-title-home">{props.title}</div>
             <div className="post-author">{props.author}</div>
           </div>
