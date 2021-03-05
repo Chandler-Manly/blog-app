@@ -1,0 +1,107 @@
+.create-form {
+  padding-top: 100px;
+  display: flex;
+  flex-flow: column wrap;
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url(https://images.unsplash.com/photo-1594201272716-9ad78d16848b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzR8fGJsdWVzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-container {
+  display: flex;
+  flex-flow: column wrap;
+  height: 80vh;
+  width: 80vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form-heading {
+  font-family: "Pacifico", cursive;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.input {
+  outline: none;
+  border: none;
+}
+
+.input-title {
+  font-size: 24px;
+  width: 50vw;
+  font-family: "Shadows Into Light Two", cursive;
+}
+
+.input-author {
+  font-size: 24px;
+  width: 50vw;
+  font-family: "Shadows Into Light Two", cursive;
+}
+
+.input-img {
+  font-size: 24px;
+  width: 50vw;
+  font-family: "Shadows Into Light Two", cursive;
+}
+
+.input-content {
+  font-size: 24px;
+  width: 50vw;
+  height: 30vh;
+  font-family: "Shadows Into Light Two", cursive;
+}
+.submit-button {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Pacifico", cursive;
+  width: 15vw;
+  height: 5vh;
+  color: #0f1e2e;
+  border: none;
+  cursor: pointer;
+  background: white;
+  border-radius: 20px;
+}
+
+.submit-button:hover {
+  background: linear-gradient(to right, #f0f2f0, #000c40);
+  color: white;
+  box-shadow: 5px 10px 18px #6096ba;
+  width: 18vw;
+  height: 8vh;
+  font-size: 28px;
+  transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 375px) {
+  .create-form {
+    padding-top: 50px;
+  }
+  .form-heading {
+    font-size: 30px;
+  }
+
+  .input-title,
+  .input-author,
+  .input-img,
+  .input-content {
+    font-size: 18px;
+  }
+
+  .submit-button {
+    width: 30vw;
+    height: 5vh;
+  }
+
+  .submit-button:hover {
+    width: 30vw;
+    height: 5vh;
+  }
+}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import './EditPost.css'
+import './EditPost.css'
 import { useParams, Redirect } from "react-router-dom";
 import Layout from "../../components/shared/Layout/Layout";
 import { getPost, updatePost } from "../../services/posts";
