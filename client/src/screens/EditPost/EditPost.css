@@ -1,0 +1,75 @@
+
+
+.post-edit {
+  display: flex;
+  margin-top: 100px;
+}
+
+.image-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.edit-post-image {
+  max-width: 500px;
+  margin: 30px;
+}
+
+.edit-input-image-link {
+  background-color: #e7ecef;
+  width: 300px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:16px;
+  letter-spacing: 1px;
+  border: 2px solid #274c77;
+  border-radius: 4px;
+}
+
+.edit-written-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 30px;
+}
+
+.input-edit-title {
+  height: 30px;
+  font-size:24px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #e7ecef;
+  border: 2px solid #274c77;
+  border-radius: 4px;
+}
+
+.input-edit-author {
+  height: 30px;
+  font-size:20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #e7ecef;
+  border: 2px solid #274c77;
+  border-radius: 4px;
+}
+
+.input-edit-content {
+  font-size:16px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 1px;
+  background-color: #e7ecef;
+  border: 2px solid #274c77;
+  border-radius: 4px;
+}
+
+.save-button {
+  width: 50px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #274c77;
+  color: #e7ecef;
+  font-size:18px;
+  border: 2px solid #274c77;
+  border-radius: 4px;
+  align-self: center;
+  width: 70px;
+}
+
+
