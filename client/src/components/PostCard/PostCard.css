@@ -56,7 +56,7 @@
   font-weight: bold;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 864px) {
   .post-card {
     margin-top: 20px;
     margin-bottom: 20px;
