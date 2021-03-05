@@ -1,0 +1,108 @@
+.post-details {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  padding-top: 80px;
+}
+
+.show-title {
+  display: flex;
+  justify-content: center;
+  color: #274c77;
+  font-size: 64px;
+  letter-spacing: 1px;
+  padding: 5px;
+  margin-top: 50px;
+  
+}
+
+.show-author {
+  display: flex;
+  justify-content: center;
+  color: #274c77;
+  line-height: 1.6;
+}
+
+.show-content {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  letter-spacing: .9px;
+  margin-left: 390px;
+  margin-right: 390px;
+}
+
+.show-image {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  padding-top: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.edit-button {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  height: 40px;
+  width: 20%;
+  align-self: center;
+  margin-top: 20px;
+  background-color: #274c77;
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 10px 2px #CECECE;
+  cursor: pointer;
+}
+
+a:link {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.delete-button {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  height: 40px;
+  width: 20%;
+  align-self: center;
+  margin-top: 20px;
+  background-color: #274c77;
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 10px 2px #CECECE;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #A3cef1;
+  color:#274c77; 
+} 
+
+.delete-button:hover {
+  background-color: #A3cef1;
+  color:#274c77; 
+}
+
+
+
+@media (max-width: 375px) {
+  .title {
+      font-size: 32px;
+  }
+  .show-image {
+      width: 375px;
+      padding: 10px;
+  }
+  .post-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+}

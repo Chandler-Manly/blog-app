@@ -1,0 +1,12 @@
+.post-cards {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 50px;
+  background-image: linear-gradient(315deg, #b1bfd8 0%, #0d324d 74%);
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-// import "./PostDetails.css";
+import "./PostDetails.css";
 import Layout from "../../components/shared/Layout/Layout";
 import { getPost, deletePost } from "../../services/posts";
 import { useParams, Link, useHistory } from "react-router-dom";
@@ -33,10 +33,12 @@ const PostDetails = (props) => {
     <div>
       <Layout>
         <div className="post-details">
-          <div className="title">{post.title}</div>
-          <div className="author">{post.author}</div>
-          <img className="image" src={post.imgURL} alt={post.title} />
-          <div className="content">{post.content}</div>
+          <div className="show-title">{post.title}</div>
+          <div className="show-author">Author Name: {post.author}</div>
+          <div className="show-image">
+          <img className="show-image" src={post.imgURL} alt={post.title} />
+          </div>
+          <div className="show-content">{post.content}</div>
           <button className="edit-button">
             <Link className="edit-link" to={`/posts/${post._id}/edit`}>
               Edit
