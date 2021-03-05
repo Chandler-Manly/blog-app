@@ -80,8 +80,28 @@
   transition: 0.2s ease-in-out;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 375px) {
   .create-form {
-    padding-top: 150px;
+    padding-top: 50px;
+  }
+  .form-heading {
+    font-size: 30px;
+  }
+
+  .input-title,
+  .input-author,
+  .input-img,
+  .input-content {
+    font-size: 18px;
+  }
+
+  .submit-button {
+    width: 30vw;
+    height: 5vh;
+  }
+
+  .submit-button:hover {
+    width: 30vw;
+    height: 5vh;
   }
 }
