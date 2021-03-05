@@ -12,8 +12,6 @@
   grid-row: auto auto;
   grid-row-gap: 20px;
   box-sizing: border-box;
-  border-style: solid;
-  border-width: thin;
   transition: 0.3s;
 }
 
