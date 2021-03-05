@@ -8,7 +8,7 @@ const Nav = () => {
         <NavLink className="logo" to="/">
           PostsApp
         </NavLink>
-        <div className="links">
+        <div className="links-container">
           <NavLink className="links" to="/posts">
             View All Posts
           </NavLink>

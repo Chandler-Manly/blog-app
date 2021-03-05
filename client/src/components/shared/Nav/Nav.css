@@ -6,8 +6,8 @@ nav {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #e7ecef;
-  border-bottom: 2px solid #274c77;
+  background-color: rgb(15, 44, 67);
+  border-bottom: 2px solid whitesmoke;
 }
 
 .nav {
@@ -21,32 +21,64 @@ nav {
 
 .logo {
   text-align: center;
-  font-weight: bold;
-  font-size: 34px;
-  flex: 1;
+  font-weight: 300;
+  font-size: 40px;
   max-width: 30vw;
-  transition: 250ms all;
+  margin-left: 40px;
+  margin-right: 55%;
+  color: white;
+  font-family: "Pacifico";
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: #a3cef1;
+  border-bottom: 1px solid #a3cef1;
+  font-size: 36px;
+  transition: 0.2s ease-in-out;
+}
+
+.links-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
 }
 
 .links {
-  flex: 2;
-  max-width: 30vw;
+  justify-content: flex-end;
   align-items: center;
   font-size: 24px;
-  display: flex;
-  margin-left: 10px;
+  margin-right: 20px;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+}
+
+.links:hover {
+  color: #a3cef1;
+  border-bottom: 1px solid #a3cef1;
+  font-size: 30px;
+  transition: 0.2s ease-in-out;
 }
 
 .link {
   flex: 1;
 }
 
-a {
-  text-decoration: none;
-  color: #274c77;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+a:visited {
+  color: white;
 }
 
-a:visited {
-  color: #274c77;
+@media only screen and (max-width: 600px) {
+  .logo {
+    display: flex;
+    margin-right: 20%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .links-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
