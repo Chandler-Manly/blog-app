@@ -34,11 +34,13 @@
 
 .post-title-home {
   font-size: 30px;
-  margin-bottom: 5px;
+  margin-bottom: 5px; 
+  color: #274c77;
 }
 
 .post-author {
   font-size: 15px;
+  color: #274c77;
 }
 
 .left-card-container {
@@ -52,6 +54,7 @@
 .view-statement {
   text-align: center;
   font-weight: bold;
+  color: #274c77;
 }
 
 @media (max-width: 864px) {
