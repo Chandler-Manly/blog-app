@@ -35,7 +35,7 @@ const PostDetails = (props) => {
         <div className="post-details">
           <div className="show-title">{post.title}</div>
           <div className="show-author">Author Name: {post.author}</div>
-         <div className="show-image">
+          <div className="show-image">
           <img className="show-image" src={post.imgURL} alt={post.title} />
           </div>
           <div className="show-content">{post.content}</div>
