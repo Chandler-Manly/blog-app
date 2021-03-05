@@ -12,6 +12,7 @@
   font-size: 64px;
   letter-spacing: 1px;
   padding: 5px;
+  margin-top: 50px;
   
 }
 
@@ -60,6 +61,7 @@
 
 a:link {
   color: whitesmoke;
+  text-decoration: none;
 }
 
 .delete-button {
