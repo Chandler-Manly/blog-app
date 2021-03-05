@@ -12,8 +12,6 @@
   grid-row: auto auto;
   grid-row-gap: 20px;
   box-sizing: border-box;
-  border-style: solid;
-  border-width: thin;
   transition: 0.3s;
 }
 
@@ -37,10 +35,12 @@
 .all-views-post-title {
   font-size: 30px;
   margin-bottom: 5px;
+  color: #274c77;
 }
 
 .all-views-post-author {
   font-size: 15px;
+  color: #274c77;
 }
 
 .all-views-left-card-container {
@@ -54,6 +54,7 @@
 .all-views-view-statement {
   text-align: center;
   font-weight: bold;
+  color: #274c77;
 }
 
 @media (max-width: 864px) {

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-// import './Posts.css'
+import "./Posts.css";
 
 import Post from "../../components/Post/Post";
 import Search from "../../components/Search/Search";
@@ -9,7 +9,6 @@ import { getPosts } from "../../services/posts";
 const Posts = (props) => {
   const [allPosts, setAllPosts] = useState([]);
   const [queriedPosts, setQueriedPosts] = useState([]);
-  // const [sortType, setSortType] = useState([])
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -19,22 +18,6 @@ const Posts = (props) => {
     };
     fetchPosts();
   }, []);
-
-  // Comment: If we want to sort our blog post by date, popularity (like button) or another method this can be used for starter code!
-
-  // const handleSort = type => {
-  //   setSortType(type)
-  //   switch (type) {
-  //     case "author-ascending":
-  //       setQueriedPosts(AZ(queriedPosts))
-  //       break
-  //     case "author-descending":
-  //       setQueriedPosts(ZA(queriedPosts))
-  //       break
-  //     default:
-  //       break
-  //   }
-  // }
 
   const handleSearch = (event) => {
     const newQueriedPosts = allPosts.filter((post) =>
@@ -57,9 +40,10 @@ const Posts = (props) => {
 
   return (
     <Layout>
-      <Search onSubmit={handleSubmit} onChange={handleSearch} />
-      {/* <Sort onSubmit={handleSubmit} onChange={handleSort} /> */}
-      <div className="posts">{postsJSX}</div>
+      <div className="post-screen-container">
+        <Search onSubmit={handleSubmit} onChange={handleSearch} />
+        <div className="posts">{postsJSX}</div>
+      </div>
     </Layout>
   );
 };
